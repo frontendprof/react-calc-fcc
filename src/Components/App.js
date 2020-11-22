@@ -32,7 +32,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>App component</h1>
-        {/* <Screen /> */}
+        <Screen current={this.state.current} result={this.state.result}/>
         {buttons.map((item,index)=><Button handleClick={this.handleClick} key={index} name={item}/>)}
       </div>
     )
